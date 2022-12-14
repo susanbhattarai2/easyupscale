@@ -25,6 +25,11 @@ code {
 .bg-white{
   background-color: white;
 }
+.bg-nav{
+  background: #e5ffff;
+  
+}
+
 /* .text-dark{
   color:#004c4d;
 } */
