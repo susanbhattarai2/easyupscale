@@ -1,0 +1,135 @@
+.hero{
+    height: 100vh;
+    /* background: rgb(220,223,255); */
+    background: #e5ffff;
+} 
+.content{
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* line-height: 8px; */
+}
+.content h1{
+    font-size: 60px;
+}
+
+/* .hero-button{
+  
+    
+} */
+/* .hero-button button{
+    margin:10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #114B78;
+    color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    font-weight: 600;
+    font-size: 16px;
+    align-items: center;
+    cursor:pointer;
+    
+} */
+/* .hero-button button a{
+    text-decoration: none;
+    color: white;
+
+}
+.hero-button button a:hover{
+    color: red;
+} */
+.logo img{
+    height: 50px;
+    width: 150px;
+}
+.logo{
+    display: flex;
+    padding: 10px;
+}
+.about-image{
+  height: auto;
+  width: auto;
+} 
+
+
+
+
+
+
+
+/* .text{
+    font-size:60px;
+    font-weight:900;
+    position:relative;
+  }
+  .text::after{
+    content:'';
+    position:absolute;
+    width:36px;
+    height:14px;
+    background-color:red;
+    border-radius:10px;
+    bottom:2px;
+    left:-54px;
+    animation: trans 1.5s linear infinite;
+     opacity:0;
+  }
+  
+  @keyframes trans{
+    20%{
+      opacity:1 ;
+      
+    }
+    80%{
+  opacity:1;
+    }
+    100%{
+      left:calc(100% + 18px);
+    }
+  }
+  .text span{
+    display:inline-block;
+    animation:wave 1.5s linear infinite;
+  }
+  .text span:nth-child(2){
+    animation-delay: 100ms;
+  }
+  .text span:nth-child(3){
+    animation-delay: 200ms;
+  }
+  .text span:nth-child(4){
+    animation-delay: 300ms;
+  }
+  .text span:nth-child(5){
+    animation-delay: 400ms;
+  }
+  .text span:nth-child(6){
+    animation-delay: 500ms;
+  }
+  .text span:nth-child(7){
+    animation-delay: 600ms;
+  }
+  .text span:nth-child(8){
+    animation-delay: 700ms;
+  }
+  .text span:nth-child(9){
+    animation-delay: 800ms;
+  }
+  .text span:nth-child(10){
+    animation-delay: 900ms;
+  }
+  .text span:nth-child(11){
+    animation-delay: 1000ms;
+  }
+  .text span:nth-child(12){
+    animation-delay: 1100ms;
+  } 
+  @keyframes wave{
+    50%{
+      transform: translateY(-37px);
+    }
+  } */
