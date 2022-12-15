@@ -5,7 +5,8 @@ module.exports = {
     extend: {},
     colors:{
       primary:' #008080',
-      hover:'#004c4d'
+      hover:'#004c4d',
+      light:'#e5ffff'
     }
   },
   plugins: [],
