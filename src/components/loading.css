@@ -1,6 +1,6 @@
 .loading::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -13,44 +13,47 @@
 .loading::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 33.3%;
-    width: 33.3%;
+   
+    /* left: 33.3%; */
+    width: 100px;
     height: 5px;
     border-radius: 25px;
     background: #008080;
     z-index: 2;
-    transform-origin: left;
+    /* transform-origin: left; */
     transform: scaleX(0);
     animation: animate 2s infinite alternate;
 }
-
+.loading{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 @keyframes animate {
     0% {
         transform: translateX(0) scaleX(0);
-        transform-origin: left;
-        left: 33.3%;
-        right: auto;
+         transform-origin: left; 
+        /* left:30px; */
+        /* right: auto; */
     }
 
     45% {
         transform: translateX(0) scaleX(1);
         transform-origin: left;
-        left: 33.3%;
-        right: auto;
-    }
+        /* left: 30px; */
+        /* right: auto; */
+    } 
 
-    50% {
+    55% {
         transform: translateX(0) scaleX(1);
         transform-origin: right;
-        left: auto;
-        right: 33.3%;
+        /* left: auto; */
+        /* right: 30px; */
     }
 
     100% {
         transform: translateX(0) scaleX(0);
         transform-origin: right;
-        left: auto;
-        right: 33.3%;
+        /* left: auto; */
+        /* right: 30px; */
     }
 }

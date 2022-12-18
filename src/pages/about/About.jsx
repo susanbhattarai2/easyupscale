@@ -6,16 +6,14 @@ import { FaAlignJustify } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 import about1 from '../../assets/about1.png'
 import about2 from '../../assets/about2.jpg'
-import {  FaFacebook, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import Footer from '../../components/Footer'
+import Footerend from '../../components/Footerend'
 const About = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav)
   };
-  const getYear = () => {
-    const currentYear = new Date().getFullYear();
-    return currentYear;
-  }
+  
   return (
     <>
         <div className='flex justify-between items-center h-20 px-4'>
@@ -77,7 +75,7 @@ const About = () => {
             <h1 className="text-3xl text-left">
               Back Story behind EASY UPSCALE
             </h1>
-            <div><Loading /></div>
+            <Loading />
             <p className="text-left my-6">
               There are two sides to every story when it comes to employment. Employers say, "Good help is hard to come by,"
               while job seekers say, "I can't seem to find a decent job anywhere." Finding suitable work and workers is a
@@ -96,7 +94,7 @@ const About = () => {
               onboarding, is far more taxing on businesses than we realize. Companies struggle to find a good fit for their team
               in the first place, and hiring an entire team for a specific project is even more difficult.
             </p>
-            <div><Loading /></div>
+            
             <div className="">
               <button className='border border-primary px-4 py-2 rounded mx-1 text-white bg-primary hover:bg-hover'>Learn More</button>
             </div>
@@ -136,43 +134,11 @@ const About = () => {
           <div className=''><img src={about2} alt='about2' /></div>
         </div>
         {/* footer */}
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-3 mt-15 px-14 py-10 bg-primary text-white'>
-          
-        <div className='flex flex-col items-center'>
-          <img src={logo} alt='footerLogo' />
-          <p>We create digital experiences for brands and companies by using technology. </p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <h1 className='py-4'>About Us</h1>
-          <ul >
-            <li className='py-1'>Home</li>
-            <li className='py-1'>Service</li>
-            <li className='py-1'>About</li>
-            <li className='py-1'>Packages</li>
-          </ul>
-        </div>
-        <div className='flex flex-col items-start'>
-          <h1 className='py-4'>Services</h1>
-          <ul >
-            <li className='py-1'>Upload your CV</li>
-            <li className='py-1'>How it works</li>
-            <li className='py-1'>Privacy policy</li>
-            <li className='py-1'>Terms of Service</li>
-          </ul>
-        </div>
-        </div>
+        <Footer />
         
         
         {/* footerend */}
-        <div className="flex items-start justify-between bg-hover text-white py-2 px-5">
-          <div className="">Copyright &copy; {getYear()}. Easy Upscale</div>
-          <div className="flex">
-            <a href='#facebook' className="px-1"><FaFacebook size={22} /></a>
-            <a href='#instagram' className="px-1"><FaInstagramSquare size={22} /></a>
-            <a href='#Linkdein' className="px-1"><FaLinkedin size={22} /></a>
-            <a href='#twitter' className="px-1"><FaTwitterSquare size={22} /></a>
-          </div>
-        </div>
+        <Footerend /> 
       </>
       )
 }

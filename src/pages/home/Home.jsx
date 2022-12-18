@@ -60,7 +60,7 @@ const Home = () => {
             <h1 className="text-3xl text-left">
               Easy Upscale is the ultimate solution for IT companies to uplift their current company scale.
             </h1>
-            <div><Loading /></div>
+            <Loading />
             <p className="text-left my-6">
               Our objective is to develop talent that is obsessed rather than just filling up critical roles in your
               company in this rapidly increasing field on a worldwide basis. Instead of hiring new employees, we engage
@@ -76,7 +76,7 @@ const Home = () => {
               top tech-friendly firm. The totality of Easy Upscale's solutions unleashes the potential of the entire team.
               Unmatched strength and quickness in the talent acquisition platform.
             </p>
-            <div><Loading /></div>
+            
             <div className="">
               <button className='border border-primary px-4 py-2 rounded mx-1 text-white bg-primary hover:bg-hover'>Learn More</button>
             </div>
